@@ -25,6 +25,23 @@ const prefix = "=";
 ////////////////////////
 //////////////////////
 /////////////////////////
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'ping') {
+        message.reply('pong');
+      }
+});
+
+
+
+
+
+client.on('ready', () => {                           
+client.user.setGame(`=help |=invite `,'https://www.youtube.com/kinggamer_th3');                                                                                                                                                                                                                                                                                                                                                                                                                            
+});
 ////////////////////////
 //////////////////////
 client.on('message', async msg => { 
